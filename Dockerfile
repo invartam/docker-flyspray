@@ -12,4 +12,4 @@ RUN apk update && apk add ca-certificates openssl && update-ca-certificates && \
     php composer.phar install && \
     rm -f composer.phar && \
     touch flyspray.conf.php && \
-    chown www-data:www-data flyspray.conf.php 
+    chown -R www-data:www-data /app
